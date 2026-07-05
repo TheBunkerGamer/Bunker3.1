@@ -1,0 +1,13 @@
+{
+  "background_color": "#030805",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Bunker Game",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Bunke3.1r",
+  "start_url": "/",
+  "theme_color": "#00ff41",
+  "description": "The Bunker Game v3.1!\n\nO país arde. Como Presidente, tens um bunker para 6 pessoas. Mas 14+ candidatos aparecem à porta — incluindo um raro.\n\n\n\nSobrevive 40 dias. Gere recursos. Crafta itens. Dá comida e água todos os dias. Toma decisões que se tornam leis permanentes.\n\n⚙️ SISTEMAS\n🍞 RECURSOS — Comida, água, medicina, peças e materiais.\n\n🔨 CRAFTING — Combina recursos para criar itens úteis.\n\n🎒 EXPLORAR — Manda alguém cá fora para trazer recursos.\n\n💊 DAR ITENS — Cura, alimenta e hidrata manualmente.\n\n⚖️ LEIS — A cada 5 dias, promulgas uma lei permanentes.",
+  "id": "bunker-v3-1"
+}
