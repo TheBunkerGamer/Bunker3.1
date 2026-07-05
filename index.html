@@ -26,7 +26,7 @@ document.head.appendChild(__link);
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BUNKER v3.1 — A Decisão Final / The Final Decision</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&display=swap');
+/* fonts loaded locally */
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
   --bg:#020a02;--bg2:#040d04;--bg3:#071007;
@@ -577,13 +577,19 @@ body{background-image:
       <button class="cm-close" onclick="closeCodeModal()">[ X ]</button>
     </div>
     <div id="code-modal-body">
-      <!-- Player section: redeem code -->
-      <div class="cm-section">
-        <div class="cm-label">◈ Inserir código de recompensa</div>
-        <input class="cm-input" id="code-input" type="text" placeholder="ex: BUNKER2024" autocomplete="off" spellcheck="false">
-        <button class="cm-btn" id="code-redeem-btn" onclick="redeemCode()">[ RESGATAR CÓDIGO ]</button>
-        <div class="cm-status" id="code-status"></div>
+      <!-- Offline message for Android -->
+      <div class="cm-section" style="text-align:center;padding:18px 10px">
+        <div style="font-size:28px;margin-bottom:12px">📵</div>
+        <div style="color:var(--am);font-family:'VT323',monospace;font-size:18px;letter-spacing:2px;margin-bottom:10px">CÓDIGOS NÃO DISPONÍVEIS</div>
+        <div style="color:var(--tx2);font-size:11px;line-height:1.6">
+          Nos dispositivos Android, os códigos de recompensa ainda não estão disponíveis, pois o jogo é 100% offline.<br><br>
+          Se quiseres jogar com códigos, vai ao <span style="color:var(--g)">itch.io</span> e instala a versão em HTML. 😊
+        </div>
+        <div style="margin-top:14px">
+          <div style="color:var(--tx3);font-size:10px">🔗 thethomas124216.itch.io/the-bunker-game</div>
+        </div>
       </div>
+      <div style="display:none">
 
       <!-- History of redeemed codes -->
       <div class="cm-section">
@@ -591,8 +597,9 @@ body{background-image:
         <div id="code-history-list" class="adm-code-list" style="max-height:90px"></div>
       </div>
 
+      </div>
       <!-- Admin section: hidden until password -->
-      <hr class="cm-divider">
+      <hr class="cm-divider" style="display:none">
       <div class="cm-section">
         <div class="cm-label">◈ Acesso administrador</div>
         <div id="admin-gate">
